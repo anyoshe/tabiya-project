@@ -1,0 +1,67 @@
+.employer-landing-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .classfier-section {
+    display: flex;
+
+  }
+  .one {
+    width: 70%;
+  }
+  .results-classifier {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .two {
+    width: 30%;
+    padding-left: 20px;
+  }
+  .profile-section,
+  .search-bar-section,
+  .classifier-section,
+  .job-seekers-list,
+  .post-job-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+  }
+  
+  input[type="text"], select {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .post-job-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-job-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .job-seekers-list ul li {
+    list-style: none;
+  }
