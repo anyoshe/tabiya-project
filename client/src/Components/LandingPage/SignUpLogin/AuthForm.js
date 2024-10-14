@@ -17,20 +17,48 @@ const AuthForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (isSignup) {
-      if (formData.password !== formData.confirmPassword) {
-        alert("Passwords do not match!");
+    const url = isSignup ? '/auth/signup' : '/auth/login';
+    const data = isSignup 
+      ? {
+          username: formData.username,
+          phone: formData.phone,
+          email: formData.email,
+          password: formData.password,
+          confirmPassword: formData.confirmPassword
+        } 
+      : {
+          loginCredential: formData.loginCredential,
+          loginPassword: formData.loginPassword
+        };
+  
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await response.json();
+      if (response.ok) {
+        console.log(result.message);
+        alert('You have successfully created an account with us')
+        if (!isSignup) {
+          localStorage.setItem('token', result.token); // Store JWT token
+        }
       } else {
-        // Handle signup logic here
-        console.log("Sign up data:", formData);
+        alert(result.message);
       }
-    } else {
-      // Handle login logic here
-      console.log("Login data:", formData);
-    }
+    // } catch (error) {
+    //   console.error('Error:', error);
+    // }
+    } catch (error) {
+      console.error('Login error:', error); // Log the actual error
+    
+  }
+  
   };
+  
 
   return (
     <div className="auth-form-container">
