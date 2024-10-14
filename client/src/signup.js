@@ -1,31 +1,33 @@
-// Signup.js
-import React from "react";
-import './Signup.css';  // You'll create this CSS file
+import React from 'react';
+import './App.css';
 
-function Signup() {
+function App() {
   return (
-    <div className="signup-page">
-      <div className="signup-box">
-        <h2>Create a New Account</h2>
-        <form>
-          <label>Full Name:</label>
-          <input type="text" placeholder="Enter your full name" />
+    <div className="signup-container">
+      <form className="signup-form">
+        <h1>Create account</h1>
 
-          <label>Email:</label>
-          <input type="email" placeholder="Enter your email" />
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required />
 
-          <label>Password:</label>
-          <input type="password" placeholder="Enter a password" />
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required />
 
-          <label>Confirm Password:</label>
-          <input type="password" placeholder="Confirm your password" />
+        <label htmlFor="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required />
 
-          <button type="submit">Sign Up</button>
-          <p>Already have an account? <a href="/signin">Sign in here</a></p>
-        </form>
-      </div>
+        <button type="submit">Sign Up</button>
+        <p>Already Registered? <a href="login.js">Login</a></p>
+
+        <div className="social-icons">
+            <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram" /></a>
+            <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook" /></a>
+            <a href="https://www.twitter.com"><img src="twitter-icon.png" alt="Twitter" /></a>
+
+        </div>
+      </form>
     </div>
   );
 }
 
-export default Signup;
+export default App;
