@@ -10,3 +10,4 @@ const jobSeekerSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('JobSeeker', jobSeekerSchema);
+

@@ -30,7 +30,9 @@ const JobSeekerLandingPage = () => {
                         <h3>Manage Your CV</h3>
                         <section className="chatbot-section">
                             <h3>Need Help to make a CV?</h3>
-                            <button className="chatbot-button">Chat with Us</button>
+                            {/* <button className="chatbot-button">Chat with Us</button> */}
+                            {/* <button className="chatbot-button" onClick={loadChatbot}>Chat with Us</button> */}
+
                             <button className="cv-button">Upload CV</button>
                         </section>
                         <div className="cv-buttons">

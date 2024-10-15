@@ -4,6 +4,7 @@ import EmployerLandingPage from './Components/LandingPage/JobsLandingpage/Employ
 import AuthForm from './Components/LandingPage/SignUpLogin/AuthForm.js';
 import EmployerAuthForm from './Components/LandingPage/SignUpLogin/EmployerAuthForm.js';
 import JobSeekerLandingPage from './Components/LandingPage/JobSeekerLandingPage/JobSeeker.js';
+import JobSeekerCV from './Components/LandingPage/JobSeekerLandingPage/JobseekerCv.js';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
      <EmployerAuthForm />
      <EmployerLandingPage />
      <JobSeekerLandingPage />
+     <JobSeekerCV />
    </div>
   );
 }

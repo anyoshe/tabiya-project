@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
+const employerRoutes = require('./routes/employerAuth');
 const cors = require('cors');
 // Load environment variables
 dotenv.config();
@@ -19,6 +20,9 @@ app.use(cors());
 
 // Routes
 app.use('/auth', authRoutes);
+
+app.use('/employer', employerRoutes);
+
 
 
 // MongoDB Connection

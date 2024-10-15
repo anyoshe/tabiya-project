@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const JobSeeker = require('../models/jobSeeker');
 const generateToken = require('../utils/generateToken'); // Import the function
+const User = require('../models/jobSeeker');
 
 require('dotenv').config();
 
@@ -70,5 +71,23 @@ router.post('/login', async (req, res) => {
     }
 });
 
-
+// Route to get job seeker by ID
+// Route to get job seeker by ObjectId
+router.get('/jobseekers/:id', async (req, res) => {
+    try {
+      // Validate ObjectId
+      if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+        return res.status(400).json({ message: 'Invalid ObjectId' });
+      }
+  
+      const jobSeeker = await User.findById(req.params.id);
+      if (!jobSeeker) {
+        return res.status(404).json({ message: 'Job seeker not found' });
+      }
+      res.json(jobSeeker);
+    } catch (error) {
+      res.status(500).json({ message: 'Error fetching job seeker data', error });
+    }
+  });
+  
 module.exports = router;

@@ -27,16 +27,47 @@ const EmployerAuthForm = () => {
         setUserType(e.target.value);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        if (isSignUp) {
-            console.log('Sign Up:', formData);
-            // Here you would send the data to your backend for sign-up
-        } else {
-            console.log('Login:', { contact: formData.contact, password: formData.password });
-            // Here you would send the login data to your backend for sign-in
+    
+        const url = isSignUp ? '/employer/signup' : '/employer/login';
+        const data = isSignUp
+            ? {
+                businessName: userType === 'business' ? formData.businessName : '',
+                fullName: formData.fullName,
+                contact: formData.contact,
+                email: formData.email,
+                location: formData.location,
+                password: formData.password,
+                confirmPassword: formData.confirmPassword
+            }
+            : {
+                contact: formData.contact,
+                password: formData.password
+            };
+    
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json();
+            
+            if (response.ok) {
+                console.log(result.message);
+                alert(result.message);
+                if (!isSignUp) {
+                    localStorage.setItem('token', result.token); // Store JWT token
+                }
+            } else {
+                alert(result.message);
+            }
+        } catch (error) {
+            console.error('Error:', error);
         }
     };
+    
 
     return (
         <div className="auth-container">
