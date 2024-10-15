@@ -71,22 +71,30 @@ router.post('/login', async (req, res) => {
     }
 });
 
-// Route to get job seeker by ID
-// Route to get job seeker by ObjectId
-router.get('/jobseekers/:id', async (req, res) => {
-    try {
-      // Validate ObjectId
-      if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
-        return res.status(400).json({ message: 'Invalid ObjectId' });
-      }
+
+// Route to update profile
+app.put('/jobseeker/profile', async (req, res) => {
+    const userId = req.user._id; // Assuming you have user ID from authentication middleware
+    const { experience, education, skills, location, profileImage } = req.body;
   
-      const jobSeeker = await User.findById(req.params.id);
-      if (!jobSeeker) {
-        return res.status(404).json({ message: 'Job seeker not found' });
-      }
-      res.json(jobSeeker);
-    } catch (error) {
-      res.status(500).json({ message: 'Error fetching job seeker data', error });
+    try {
+      const updatedJobSeeker = await JobSeeker.findByIdAndUpdate(
+        userId,
+        {
+          $set: {
+            experience, // Update experience
+            education,  // Update education
+            skills,     // Update skills
+            location, // Update location
+            profileImage // Update profile image
+          }
+        },
+        { new: true } // Return the updated document
+      );
+  
+      res.status(200).json({ message: 'Profile updated successfully', updatedJobSeeker });
+    } catch (err) {
+      res.status(500).json({ message: 'Error updating profile', error: err.message });
     }
   });
   

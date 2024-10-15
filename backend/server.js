@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
 const employerRoutes = require('./routes/employerAuth');
+const jobSeekerRoutes = require('./routes/jobSeekerRoutes');
+app.use('/api', jobSeekerRoutes); // Adjust the path as needed
+
 const cors = require('cors');
 // Load environment variables
 dotenv.config();
@@ -23,7 +26,7 @@ app.use('/auth', authRoutes);
 
 app.use('/employer', employerRoutes);
 
-
+app.use('/api', jobSeekerRoutes); // Adjust the path as needed
 
 // MongoDB Connection
 // server.js

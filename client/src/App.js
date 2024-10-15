@@ -9,11 +9,11 @@ import JobSeekerCV from './Components/LandingPage/JobSeekerLandingPage/Jobseeker
 function App() {
   return (
      <div className="App">
-     <AuthForm />
-     <EmployerAuthForm />
-     <EmployerLandingPage />
+     {/* <AuthForm /> */}
+     {/* <EmployerAuthForm /> */}
+     {/* <EmployerLandingPage /> */}
      <JobSeekerLandingPage />
-     <JobSeekerCV />
+     {/* <JobSeekerCV /> */}
    </div>
   );
 }

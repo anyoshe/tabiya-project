@@ -1,5 +1,5 @@
 import React from 'react';
-import './JobSeeker.css'; // External stylesheet for styling
+// import './JobSeeker.css'; 
 
 const JobSeekerLandingPage = () => {
 

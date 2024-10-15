@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AuthForm.css"; // Import the CSS styles
+// import "./AuthForm.css"; 
 
 const AuthForm = () => {
   const [isSignup, setIsSignup] = useState(false);

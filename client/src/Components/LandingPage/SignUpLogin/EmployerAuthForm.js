@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './EmployerAuthForm.css'; // Import the CSS for styling
+// import './EmployerAuthForm.css';
 
 const EmployerAuthForm = () => {
     const [isSignUp, setIsSignUp] = useState(true);
