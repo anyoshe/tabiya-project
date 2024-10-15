@@ -1,0 +1,315 @@
+/* General styling */
+/* body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container-seeker {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+  .job-seeker-landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  } */
+  
+  /* Header Styling */
+  /* .header {
+    background-color: #4a90e2;
+    padding: 20px;
+    color: white;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-buttons button {
+    margin-left: 15px;
+    background-color: white;
+    color: #4a90e2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #357ABD;
+    color: white;
+  } */
+  
+  /* Hero Section */
+  /* .hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9f7ff;
+  }
+  
+  .hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+  } */
+  
+  /* Job Section */
+  /* .job-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .job-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .job-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .job-button:hover {
+    background-color: #357ABD;
+  } */
+  
+  /* Skill Section */
+  /* .skill-section {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .skill-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .skill-button {
+    background-color: #7ED321;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  } */
+  
+  /* .skill-button:hover {
+    background-color: #69A917;
+  } */
+  
+  /* CV Section */
+  /* .cv-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .cv-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .cv-button {
+    background-color: #F5A623;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cv-button:hover {
+    background-color: #D28F1E;
+  } */
+  
+  /* Chatbot Section */
+  /* .chatbot-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .chatbot-button {
+    background-color: #BD10E0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatbot-button:hover {
+    background-color: #9B0EB5;
+  } */
+  
+  /* Footer Styling */
+  /* .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+  } */
+
+  /* JobSeeker.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.job-seeker-landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  background-color: #4A90E2;
+  color: white;
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-button {
+  background-color: black;
+  color: white;
+}
+
+.logout-button {
+  background-color: black;
+  color: white;
+  padding:10px 25px;
+  border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #E8E8E8;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.container-seeker {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CV Development Styles */
+.cv-development {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.cv-section, .skill-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.chatbot-section {
+  margin-top: 10px;
+}
+.chatbot-button{
+  background-color: black;
+  color:white;
+  border-radius: 5px ;
+  padding:10px 25px;
+}
+
+.cv-button, .skill-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+/* Job Links Styles */
+.job-section {
+  flex: 1;
+  margin-left: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4A90E2;
+  color: white;
+}
+
