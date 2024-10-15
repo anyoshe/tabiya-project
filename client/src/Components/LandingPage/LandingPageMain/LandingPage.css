@@ -1,11 +1,11 @@
 .App {
-  background-image: url('./background.jpg');
+  background-image: url('./background.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* Adjusted to push footer to the bottom */
   align-items: center;
 }
 
@@ -29,22 +29,22 @@
 
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Adjusts space between sections */
   align-items: center;
-  height: 100%;
+  width: 80%;  /* Reduced the width for balance */
 }
 
 .left-section {
-  flex: 1;
+  flex: 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .right-section {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -58,7 +58,6 @@
   padding: 20px;
   border-radius: 20px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 

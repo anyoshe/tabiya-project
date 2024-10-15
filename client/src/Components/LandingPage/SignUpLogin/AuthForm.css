@@ -1,50 +1,44 @@
-/* Basic reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f0f2f5;
-   /* background-image: url('./background.jpg'); */
+  color: black;  /* Set default text color to black */
 }
 
-/* Container for the form */
+/* Auth Form Container */
 .auth-form-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom right, #e0e7ff, #f0f2f5);  /* Gradient background for depth */
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  
-  /* Prevent image from repeating */
 }
 
-/* Styling the form */
 .auth-form {
   width: 100%;
   max-width: 400px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Improved shadow for more depth */
   text-align: center;
 }
 
-.auth-form-container h2 {
+.auth-form h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+/* Form Group */
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -53,44 +47,47 @@ body {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color:white;
-  padding: 20px;
-  border-radius: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  color: black;
 }
 
 .form-group input {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 1rem;
-  color:black;
+  color: black;
+  background-color: #f7f8fc;  /* Light background for inputs */
+  transition: border 0.3s ease;
 }
 
-/* Button styles */
+.form-group input:focus {
+  border: 1px solid #000;  /* Border on focus */
+  outline: none;
+}
+
+/* Button */
 .auth-button {
   width: 100%;
+  padding: 0.75rem;
   background-color: black;
   color: white;
   border: none;
-  padding: 0.75rem;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .auth-button:hover {
-  background-color: white; /* You might want to change this color */
+  background-color: #2c3e50;
+  transform: scale(1.03);  /* Slight scaling on hover */
 }
 
-/* Toggle between signup and login */
+/* Toggle Between Signup and Login */
 .toggle-auth {
   margin-top: 1rem;
-  text-align: center;
+  font-size: 0.9rem;
 }
 
 .toggle-auth button {
@@ -99,18 +96,33 @@ body {
   color: #007bff;
   cursor: pointer;
   text-decoration: underline;
+  transition: color 0.3s;
 }
 
 .toggle-auth button:hover {
   color: black;
 }
 
-
-.login-box {
-  background-color: white;
-  padding: 20px;
-  border-radius: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Footer Styling */
+footer {
+  margin-top: 2rem;
   text-align: center;
+  color: black;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
 }
