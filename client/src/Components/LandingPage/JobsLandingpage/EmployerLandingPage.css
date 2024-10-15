@@ -1,67 +1,65 @@
 .employer-landing-page {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  .header {
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .classfier-section {
-    display: flex;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  background-image: url('./background.png'); /* Add this line */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
 
-  }
-  .one {
-    width: 70%;
-  }
-  .results-classifier {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-  }
-  .two {
-    width: 30%;
-    padding-left: 20px;
-  }
-  .profile-section,
-  .search-bar-section,
-  .classifier-section,
-  .job-seekers-list,
-  .post-job-section {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  .profile-details p {
-    margin: 5px 0;
-  }
-  
-  input[type="text"], select {
-    padding: 10px;
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  .post-job-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .post-job-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .job-seekers-list ul li {
-    list-style: none;
-  }
+.employer-profile p {
+  margin: 5px 0;
+}
+
+.search-section {
+  margin: 20px 0;
+}
+
+.search-job-seekers input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.round-button {
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.round-button:hover {
+  background-color: whi;/* Darker shade on hover */
+}
+
+.job-seeker-list {
+  margin-top: 20px;
+  height: 200px; /* Restrict the height for scroll */
+  overflow-y: scroll;
+  background-color: #f0f0f0; /* Light gray for contrast */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.job-seeker-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.job-seeker-list th, .job-seeker-list td {
+  padding: 8px;
+  border: 1px solid #000; /* Black borders */
+}
+
+.job-seeker-list th {
+  background-color: #ccc; /* Light gray header */
+}
+
+.job-seeker-list td {
+  text-align: center;
+}

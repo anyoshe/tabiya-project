@@ -5,33 +5,37 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-  }
+    background-image: url('./background.jpg'); /* Add this line */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
   
-  .container-seeker {
+.container-seeker {
     display: flex;
     min-height: 100vh;
     justify-content: space-between;
-  }
-  .job-seeker-landing-page {
+}
+.job-seeker-landing-page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-  }
+    min-height: auto;
+}
   
-  /* Header Styling */
-  .header {
-    background-color: #4a90e2;
+/* Header Styling */
+.header {
+    background-color: rgba(74, 144, 226, 0.8); /* Slight transparency to see the background */
     padding: 20px;
     color: white;
-  }
+}
   
-  .nav-bar {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .nav-buttons button {
+.nav-buttons button {
     margin-left: 15px;
     background-color: white;
     color: #4a90e2;
@@ -41,44 +45,44 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .nav-buttons button:hover {
+.nav-buttons button:hover {
     background-color: #357ABD;
     color: white;
-  }
+}
   
-  /* Hero Section */
-  .hero-section {
+/* Hero Section */
+.hero-section {
     text-align: center;
     padding: 60px 20px;
-    background-color: #e9f7ff;
-  }
+    background-color: rgba(233, 247, 255, 0.9); /* Slight transparency to see the background */
+}
   
-  .hero-section h2 {
+.hero-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-  }
+}
   
-  .hero-section p {
+.hero-section p {
     font-size: 1.2rem;
     color: #555;
-  }
+}
   
-  /* Job Section */
-  .job-section {
+/* Job Section */
+.job-section {
     padding: 40px 20px;
     text-align: center;
-  }
+}
   
-  .job-buttons {
+.job-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-  }
+}
   
-  .job-button {
+.job-button {
     background-color: #4a90e2;
     color: white;
     border: none;
@@ -87,27 +91,27 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .job-button:hover {
+.job-button:hover {
     background-color: #357ABD;
-  }
+}
   
-  /* Skill Section */
-  .skill-section {
+/* Skill Section */
+.skill-section {
     padding: 40px 20px;
     background-color: #f1f1f1;
     text-align: center;
-  }
+}
   
-  .skill-buttons {
+.skill-buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
-  }
+}
   
-  .skill-button {
-    background-color: #7ED321;
+.skill-button {
+    background-color: black;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -115,25 +119,25 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .skill-button:hover {
+.skill-button:hover {
     background-color: #69A917;
-  }
+}
   
-  /* CV Section */
-  .cv-section {
+/* CV Section */
+.cv-section {
     padding: 40px 20px;
     text-align: center;
-  }
+}
   
-  .cv-buttons {
+.cv-buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
-  }
+}
   
-  .cv-button {
+.cv-button {
     background-color: #F5A623;
     color: white;
     border: none;
@@ -142,19 +146,19 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .cv-button:hover {
+.cv-button:hover {
     background-color: #D28F1E;
-  }
+}
   
-  /* Chatbot Section */
-  .chatbot-section {
+/* Chatbot Section */
+.chatbot-section {
     padding: 40px 20px;
     text-align: center;
-  }
+}
   
-  .chatbot-button {
+.chatbot-button {
     background-color: #BD10E0;
     color: white;
     border: none;
@@ -163,18 +167,17 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .chatbot-button:hover {
+.chatbot-button:hover {
     background-color: #9B0EB5;
-  }
+}
   
-  /* Footer Styling */
-  .footer {
+/* Footer Styling */
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: auto;
-  }
-  
+}
