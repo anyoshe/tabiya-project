@@ -24,11 +24,7 @@ body {
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   
-  /* Background image settings */
-  background-image: url('./background.jpg'); /* Ensure this path is correct */
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent image from repeating */
+  /* Prevent image from repeating */
 }
 
 /* Styling the form */

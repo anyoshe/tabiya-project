@@ -3,7 +3,6 @@
   padding: 20px;
   background-color: #fff; /* White background */
   color: #000; /* Black text */
-  background-image: url('./background.png'); /* Add this line */
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;

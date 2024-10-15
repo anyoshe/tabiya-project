@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import './EmployerAuthForm.css';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import './EmployerAuthForm.css';
 
 const EmployerAuthForm = () => {
     const [isSignUp, setIsSignUp] = useState(true);
@@ -13,6 +14,8 @@ const EmployerAuthForm = () => {
         password: '',
         confirmPassword: ''
     });
+    const navigate = useNavigate(); // Initialize useNavigate
+
 
     const toggleFormType = () => {
         setIsSignUp(!isSignUp);
@@ -60,6 +63,7 @@ const EmployerAuthForm = () => {
                 if (!isSignUp) {
                     localStorage.setItem('token', result.token); // Store JWT token
                 }
+                navigate('/employer-dashboard');
             } else {
                 alert(result.message);
             }

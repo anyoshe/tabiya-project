@@ -6,6 +6,7 @@ const JobSeeker = require('../models/jobSeeker');
 const generateToken = require('../utils/generateToken'); // Import the function
 const User = require('../models/jobSeeker');
 
+
 require('dotenv').config();
 
 const router = express.Router();
@@ -73,7 +74,7 @@ router.post('/login', async (req, res) => {
 
 
 // Route to update profile
-app.put('/jobseeker/profile', async (req, res) => {
+router.put('/jobseeker/profile', async (req, res) => {
     const userId = req.user._id; // Assuming you have user ID from authentication middleware
     const { experience, education, skills, location, profileImage } = req.body;
   

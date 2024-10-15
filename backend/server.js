@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
 const employerRoutes = require('./routes/employerAuth');
 const jobSeekerRoutes = require('./routes/jobSeekerRoutes');
-app.use('/api', jobSeekerRoutes); // Adjust the path as needed
+
 
 const cors = require('cors');
 // Load environment variables

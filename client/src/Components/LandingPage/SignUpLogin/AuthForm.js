@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-// import "./AuthForm.css"; 
+import "./AuthForm.css"; 
+import { useNavigate } from 'react-router-dom';  // Import the useNavigate hook
+
 
 const AuthForm = () => {
   const [isSignup, setIsSignup] = useState(false);
@@ -12,6 +14,7 @@ const AuthForm = () => {
     loginCredential: "",
     loginPassword: "",
   });
+  const navigate = useNavigate();  // Initialize the navigate hook
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -43,6 +46,7 @@ const AuthForm = () => {
       if (response.ok) {
         console.log(result.message);
         alert('You have successfully created an account with us')
+        navigate('/jobseeker-dashboard');
         if (!isSignup) {
           localStorage.setItem('token', result.token); // Store JWT token
         }

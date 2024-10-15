@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
   }
   
   .job-seeker-landing-page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
   
   /* Header Styles */
@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 20;
   }
   
   .nav-buttons button {

@@ -1,5 +1,5 @@
 import React from 'react';
-// import './EmployerLandingPage.css'; 
+import './EmployerLandingPage.css'; 
 
 const EmployerLandingPage = () => {
   return (
