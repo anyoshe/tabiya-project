@@ -9,8 +9,8 @@ function LandingPage() {
     <div className="App">
       <header className="App-header">
         <div className="navbar">
-          <Link to="/freelancer">Sign up as a freelancer</Link>
-          <Link to="/contractor">Sign up as a contractor</Link>
+          <Link to="/freelancer">Job seeeker sign-up</Link>
+          <Link to="/contractor">Employer sig-up</Link>
           <Link to="/signin">Sign in</Link>
           <Link to="/contact">Contact us</Link>
         </div>
@@ -22,13 +22,13 @@ function LandingPage() {
           
           <div className="right-section">
             <div className="login-box">
-              <h2>Login account</h2>
+              <h4>Login account</h4>
               <form>
                 <label>Email:</label>
                 <input type="email" placeholder="Enter email" required />
                 <label>Password:</label>
                 <input type="password" placeholder="Enter password" required />
-                <button type="submit">Sign Up</button>
+                <button type="submit">Sign-in</button>
               </form>
             </div>
           </div>

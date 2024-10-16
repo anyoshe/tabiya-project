@@ -35,10 +35,11 @@ function App() {
 
           {/* Job Seeker Landing Page */}
           <Route path="/jobseeker" element={<JobSeekerLandingPage />} />
-
+            
           {/* Job Seeker CV Page */}
           <Route path="/jobseeker-cv" element={<JobSeekerCV />} />
         </Routes>
+        
       </div>
     </Router>
   );
